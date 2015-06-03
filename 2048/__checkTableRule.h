@@ -10,15 +10,15 @@ public:
 int _checkTableRule(int array[4][4]){
 	
 	for(i = 0; i <= 3; ++i){
-		for(j = 0; j <=2; ++j){
-			if(array[i][j] == array[i+1][j]){
+		for(j = 0; j <= 2; ++j){
+			if(array[i][j] == array[i][j+1]){
 				return 1;
 			}
 		}
 	}
 	for(j = 0; j <= 3; ++j){
 		for(i = 0; i <= 2; ++i){
-			if(array[i][j] == array[i][j+1]){
+			if(array[i][j] == array[i+1][j]){
 				return 1;
 			}
 		}
@@ -28,13 +28,13 @@ int _checkTableRule(int array[4][4]){
 
 int _checktable(int array[4][4]){
 	SumCell = 0;
-	for(i=0; i<4; ++i){
+	for(i=0; i < 4; ++i){
 	
-		for(j=0; j<4; ++j){
+		for(j=0; j < 4; ++j){
 			// tim so o con trong
 			if(array[i][j] == 0){
-			
 				SumCell +=1;
+				break;
 			}
 		}
 	}

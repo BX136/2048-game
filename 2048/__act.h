@@ -4,13 +4,18 @@
 class __act
 {
 private:
-	int i,j,k;
-	int Save_Array[5];
+	int i,j,k,y;
+	int Save_Array[6];
 	
 public:
 
-	void _actUp(int array[4][4]){
-
+void _actUp(int array[4][4], int diem[1]){
+	Save_Array[0] = 0;
+	Save_Array[1] = 0;
+	Save_Array[2] = 0;
+	Save_Array[3] = 0;
+	Save_Array[4] = 0;
+	Save_Array[5] = 0;
 	// xu li cac o trong 1 cot
 	for(j = 0; j <= 3; ++j){
 		k = 0;
@@ -29,11 +34,19 @@ public:
 			if(Save_Array[x] == 0){
 				break;
 				
-			}if(Save_Array[x] == Save_Array[x+1]){
+			}
+
+			if(Save_Array[x] == Save_Array[x+1]){
+				diem[0] = diem[0] + Save_Array[x] ;
 				Save_Array[x] = Save_Array[x] + Save_Array[x+1];
-				for(int y = x+1; y < k-1; ++y){
+				Save_Array[x+1] = 0;
+				
+				for( y = x+1; y < k-1; ++y){
 					Save_Array[y] = Save_Array[y+1];
 					Save_Array[y+1] = 0;
+				}
+				for(int t = y+1; t <= 5; ++t){
+					Save_Array[t] =0;
 				}
 			}
 		}
@@ -53,9 +66,14 @@ public:
 }
 
 
-void _actDow(int array[4][4]){
+void _actDow(int array[4][4], int diem[1]){
 
-
+	Save_Array[0] = 0;
+	Save_Array[1] = 0;
+	Save_Array[2] = 0;
+	Save_Array[3] = 0;
+	Save_Array[4] = 0;
+	Save_Array[5] = 0;
 	// xu li cac o trong 1 cot
 	for(j = 0; j <= 3; ++j){
 		k = 0;
@@ -76,10 +94,16 @@ void _actDow(int array[4][4]){
 				break;
 				
 			}if(Save_Array[x] == Save_Array[x+1]){
+				diem[0] = diem[0] + Save_Array[x] ;
 				Save_Array[x] = Save_Array[x] + Save_Array[x+1];
-				for(int y = x+1; y < k-1; ++y){
+				Save_Array[x+1] = 0;
+				
+				for( y = x+1; y < k-1; ++y){
 					Save_Array[y] = Save_Array[y+1];
 					Save_Array[y+1] = 0;
+				}
+				for(int t = y+1; t <= 5; ++t){
+					Save_Array[t] =0;
 				}
 			}
 		}
@@ -100,8 +124,13 @@ void _actDow(int array[4][4]){
 	}
 }
 
-void _actRight(int array[4][4]){
-
+void _actRight(int array[4][4], int diem[1]){
+	Save_Array[0] = 0;
+	Save_Array[1] = 0;
+	Save_Array[2] = 0;
+	Save_Array[3] = 0;
+	Save_Array[4] = 0;
+	Save_Array[5] = 0;
 	// xu li cac o trong 1 cot
 	for(i = 0; i <= 3; ++i){
 		k = 0;
@@ -122,10 +151,16 @@ void _actRight(int array[4][4]){
 				break;
 				
 			}if(Save_Array[x] == Save_Array[x+1]){
+				diem[0] = diem[0] + Save_Array[x] ;
 				Save_Array[x] = Save_Array[x] + Save_Array[x+1];
-				for(int y = x+1; y < k-1; ++y){
+				Save_Array[x+1] = 0;
+			
+				for( y = x+1; y < k-1; ++y){
 					Save_Array[y] = Save_Array[y+1];
 					Save_Array[y+1] = 0;
+				}
+				for(int t = y+1; t <= 5; ++t){
+					Save_Array[t] =0;
 				}
 			}
 		}
@@ -146,8 +181,13 @@ void _actRight(int array[4][4]){
 	}
 }
 
-void _actleft(int array[4][4]){
-
+void _actleft(int array[4][4], int diem[1]){
+	Save_Array[0] = 0;
+	Save_Array[1] = 0;
+	Save_Array[2] = 0;
+	Save_Array[3] = 0;
+	Save_Array[4] = 0;
+	Save_Array[5] = 0;
 	// xu li cac o trong 1 cot
 	for(i = 0; i <= 3; ++i){
 		k = 0;
@@ -167,10 +207,16 @@ void _actleft(int array[4][4]){
 			if(Save_Array[x] == 0){
 				break;
 			}if(Save_Array[x] == Save_Array[x+1]){
+				diem[0] = diem[0] + Save_Array[x] ;
 				Save_Array[x] = Save_Array[x] + Save_Array[x+1];
-				for(int y = x+1; y < k-1; ++y){
+				Save_Array[x+1] = 0;
+			
+				for( y = x+1; y < k-1; ++y){
 					Save_Array[y] = Save_Array[y+1];
 					Save_Array[y+1] = 0;
+				}
+				for(int t = y+1; t <= 5; ++t){
+					Save_Array[t] =0;
 				}
 			}
 		}

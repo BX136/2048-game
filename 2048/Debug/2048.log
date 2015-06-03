@@ -1,12 +1,9 @@
-﻿Build started 02/06/2015 8:27:59 CH.
+﻿Build started 03/06/2015 12:21:25 CH.
      1>Project "C:\Users\B gaming\Documents\Visual Studio 2010\Projects\C++ project\2048\2048\2048.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\2048.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt 2048_main.cpp __checkRule.cpp __controlCenter.cpp
-         __checkRule.cpp
-         Generating Code...
-         Compiling...
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt 2048_main.cpp __controlCenter.cpp
          __controlCenter.cpp
          2048_main.cpp
          Generating Code...
@@ -35,4 +32,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.71
+Time Elapsed 00:00:03.55
