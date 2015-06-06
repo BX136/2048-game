@@ -9,6 +9,7 @@ class __checkRule
 private:
 	int i,j;
 	char key;
+	__checkTableRule check;
 public:
 int _checkWin(int array[4][4]){
 	for(i = 0; i <= 3; ++i ){
@@ -23,7 +24,6 @@ int _checkWin(int array[4][4]){
 			}
 		}
 	}
-	__checkTableRule check;
 	if(check._checktable(array) == 0){
 		key = _getch();
 		do{

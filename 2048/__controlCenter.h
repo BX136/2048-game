@@ -8,6 +8,13 @@
 #include <windows.h>
 class __controlCenter
 {
+private:
+	__act key;
+	__checkTableRule table;
+	__checkRule Rule;
+	__add2_4 add;
+	__table draw;
+	__actPut act;
 public:
 	int diem[1];
 public:
@@ -15,15 +22,12 @@ public:
 	void _playGame(int array[4][4]){
 	diem[0] = 0;
 	int i = 0;
-	__add2_4 add;
+	
 	add._add2_4(array);
-	__table draw;
 	draw._drawTable(array);
-	__checkTableRule table;
-	__checkRule Rule;
-
+	
 	do{
-		__actPut act;
+		
 		int Step = act._actPut();
 		system("cls");
 		if(Step == 1 || Step == 2 || Step ==3 || Step == 4 ){
@@ -46,25 +50,22 @@ private:
 	switch(Step){
 		case 1: 
 		{	
-			__act up;
-			up._actUp(array, diem);
+			key._actUp(array, diem);
 			break;
 		}
 		case 2: 
-		{	__act Right;
-			Right._actRight(array, diem);
+		{	
+			key._actRight(array, diem);
 			break;
 		}
 		case 3: 
 		{	
-			__act Dow;
-			Dow._actDow(array, diem);
+			key._actDow(array, diem);
 			break;
 		}	
 		case 4: 
 		{	
-			__act Left;
-			Left._actleft(array, diem);
+			key._actleft(array, diem);
 			break;
 		}
 	}

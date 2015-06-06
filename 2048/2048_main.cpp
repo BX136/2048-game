@@ -29,6 +29,7 @@ playAgain:
 			break;
 		}
 	}while(key != 'Y' || key != 'y' || key != 'N' || key != 'n');
+
 	cout << "\n";
 	system("cls");
 }

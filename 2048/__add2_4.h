@@ -12,13 +12,17 @@ void _add2_4(int array[4][4])
 		do{
 			x = rand()%4;
 			y = rand()%4;
+
 		}while(array[x][y] != 0);
+
 		array[x][y] = 2;
 		
 		do{
 			x = rand()%4;
 			y = rand()%4;
+
 		}while(array[x][y] != 0);
+
 		array[x][y] = 4;
 	}if( tablecheck._checktable(array) < 14 && tablecheck._checktable(array) >=1 ){
 		do{
